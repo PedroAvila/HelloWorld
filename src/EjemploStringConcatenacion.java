@@ -3,18 +3,19 @@ public class EjemploStringConcatenacion {
     public static void main(String[] args) {
 
         String curso = "Programación Java";
-        String curso2 = new String("Programación Java");
+        String profesor = "Andrés Guzmán";
 
-        boolean esIgual = curso == curso2;
-        System.out.println("curso == curso2 = " + esIgual);
+        String detalle = curso + " con el instructor " + profesor;
+        System.out.println(detalle);
 
-        esIgual = curso.equals(curso2);
-        System.out.println("curso.equals(curso2) = " + esIgual);
+        int numeroA = 10;
+        int numeroB = 5;
 
-        String curso3 = "Programación Java";
-        esIgual = curso == curso3;
-        System.out.println("curso == curso3 = " + esIgual);
+        System.out.println(detalle + (numeroA + numeroB));
+        System.out.println(numeroA + numeroB + detalle);
 
+        String detalle2 = curso.concat(" con ").concat(profesor);
+        System.out.println("detalle2 = " + detalle2);
     }
 
 }
